@@ -64,7 +64,7 @@ namespace SocksToVpn
             }
 
             string proxyServer = $"{proxyAuth}{_proxySettings.IpAddress}:{_proxySettings.Port}";
-            string arguments = $"-device wintun -proxy socks5://{proxyServer} -interface \"{interfaceName}\"";
+            string arguments = $"-device wintun://wintun -proxy socks5://{proxyServer} -interface \"{interfaceName}\"";
 
             Console.WriteLine($"Starting tun2socks with command: {_tun2SocksPath} {arguments}");
             

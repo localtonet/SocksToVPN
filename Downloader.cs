@@ -109,7 +109,7 @@ namespace SocksToVpn
                 return string.Empty; // Not needed for non-Windows systems
             }
 
-            const string wintunUrl = "https://localtonet.com/download/wintun-0.14.1.zip";
+            const string wintunUrl = "https://www.wintun.net/builds/wintun-0.14.1.zip";
             string wintunZipPath = Path.Combine(_appDirectory, "wintun.zip");
             string extractPath = Path.Combine(_appDirectory, "wintun_extract");
             string wintunDllDestination = Path.Combine(_appDirectory, "wintun.dll");

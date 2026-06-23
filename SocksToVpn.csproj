@@ -19,5 +19,9 @@
   <PropertyGroup Condition="$([MSBuild]::IsOSPlatform('OSX'))">
     <DefineConstants>OSX</DefineConstants>
   </PropertyGroup>
+  
+  <ItemGroup>
+    <None Include=".github\workflows\build.yml" />
+  </ItemGroup>
 
 </Project>
